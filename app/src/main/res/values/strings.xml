@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CookBookPrpject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yemek_smi">Yemek İsmi</string>
+    <string name="yemek_malzemeleri">Yemek Malzemeleri</string>
+    <string name="test">Test</string>
+</resources>

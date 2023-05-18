@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookFragment">
+
+    <EditText
+        android:id="@+id/cookNameText"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/yemek_smi"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/cookDetailsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/cookDetailsText"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="@string/yemek_malzemeleri"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/cookAddButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cookNameText"
+        tools:ignore="Autofill,TextContrastCheck" />
+
+    <Button
+        android:onClick="save"
+        android:id="@+id/cookAddButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cookDetailsText"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:onClick="photoSave"
+        android:id="@+id/imageView1"
+        android:layout_width="338dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/defaultimg"
+        app:layout_constraintBottom_toTopOf="@+id/cookNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
